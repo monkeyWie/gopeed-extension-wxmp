@@ -1,0 +1,24 @@
+{
+  "name": "gopeed-extention-wxmp",
+  "author": "monkeyWie",
+  "title": "微信公众号视频下载",
+  "description": "微信公众号视频下载，支持批量下载所有视频",
+  "icon": "icon.png",
+  "version": "1.0.0",
+  "homepage": "",
+  "repository": {
+    "url": ""
+  },
+  "scripts": [
+    {
+      "event": "onResolve",
+      "match": {
+        "urls": [
+          "*://mp.weixin.qq.com/s/*"
+        ]
+      },
+      "entry": "dist/index.js"
+    }
+  ],
+  "settings": []
+}
